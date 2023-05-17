@@ -18,6 +18,11 @@ struct model_object {
   GLenum draw_mode = GL_NONE;
   // indices number, if EBO exists
   GLsizei num_elements = 0;
+
+
+  // New member variable for color buffer object
+  GLuint color_BO;
+
 };
 
 // gpu representation of texture
