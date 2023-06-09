@@ -11,6 +11,7 @@ using namespace gl;
 
 // gpu representation of model
 struct model_object {
+<<<<<<< HEAD
 	// vertex array object
 	GLuint vertex_AO = 0;
 	// vertex buffer object
@@ -23,6 +24,23 @@ struct model_object {
 	GLsizei num_elements = 0;
 	//
 	bool using_indices = false;
+=======
+  // vertex array object
+  GLuint vertex_AO = 0;
+  // vertex buffer object
+  GLuint vertex_BO = 0;
+  // index buffer object
+  GLuint element_BO = 0;
+  // primitive type to draw
+  GLenum draw_mode = GL_NONE;
+  // indices number, if EBO exists
+  GLsizei num_elements = 0;
+
+
+  // New member variable for color buffer object
+  GLuint color_BO;
+
+>>>>>>> fb969cbe34cc62bcbd66791595b0e3f6ca1101ae
 };
 
 // gpu representation of texture
